@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Uber</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Uber Booking</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <style>
+            body{
+                background-image: url("http://planotaxiservice.com/wp-content/uploads/2018/01/home-background-1024x661.jpg");
+                background-position:0rcap ;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+li {
+        float: left;
+    }
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; 
+    }
+    .unli li{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 30px;
+        
+    }
+    li a {
+        display: block;
+        color: rgb(214, 199, 199);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    
+      li a:hover {
+        border: 2px solid white;
+        border-radius: 30px;
+        letter-spacing: 0.10em;
+        font-weight: bold;
+    }
+    .Uber{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: rgb(104, 175, 238);
+        font-size: x-large;
+  
+      
+    }
+    @keyframes animate {
+        0%{
+            transform: translateX(100%);   
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.submit{
+    border: 2px solid black;
+    border-radius: 30px;
+    color: white;
+    background: none;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.submit:hover{
+    letter-spacing: 0.15em;
+    background-color: none;
+    color: blue;
+    box-shadow: 0px 0px 30px blue;
+}
+  
+       Input[type=text] {
+  Border: 10px;
+  border-radius: 10px;
+  Padding :10px 18px;
+  }       
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background: none;
+  background-color: rgb(3, 30, 58,0.5);
+  color: #fff; 
+  padding: 30px;
+}
+
+.footer__logo img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.footer h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin-bottom: 5px;
+}
+
+.footer__links ul,
+.footer__social ul {
+  list-style: none;
+}
+
+.footer__links li,
+.footer__social li {
+  margin-bottom: 5px;
+}
+
+.footer__links a,
+.footer__social a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer__links a:hover,
+.footer__social a:hover {
+  color: #ffcc33; 
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer__logo img {
+    margin-bottom: 10px;
+  }
+
+  .footer__contact,
+  .footer__links,
+  .footer__social {
+    margin-bottom: 20px;
+  }
+}
+
+      </style>
+
+</head>
+<body>
+  <header>
+    <img src="https://nipponrama.com/wp-content/uploads/2016/09/uber-logo.jpg?6bfec1&6bfec1" alt="Logo" width="100px" height="100px" style="margin-right: 300px;">  
+    <section id="navigation bar">
+       <ul class="unli">
+       <li><a class="active" href="#home">HOME</a></li>
+<li><a href="#safety">SAFETY</a></li>
+<li><a href="#help">HELP</a></li>
+<li><a href="#contact">CONTACT</a></li>
+<li><a href="#login">LOGIN</a></li>
+  <li><a href="#language">ENGLISH
+      <select style="border: none; background: none; color: white;">
+        <option value="lang">Select</option>
+        <option value="english">english</option>
+        <option value="Hindi">Hindi</option>
+        <option value="tamil">Tamil</option>
+        <option value="Telugu">Telugu</option>
+      </select>
+  </a></li>
+</ul>
+</header>
+<h4 style="font-size: 100px; font-style: italic; text-align:center; color: rgb(241, 247, 252); font-weight: 300; animation: animate 3s;"
+
+>Move the way you want</h4>
+
+  <p style ="font-size: 30px; text-align: center; color: rgba(96, 175, 235, 0.911); font-weight: 500;">Come be your own boss and make up to $28/hr in fares an
+  independent contractor. </p>
+  <p style ="font-size: 30px; text-align: center; color: rgb(102, 147, 192); font-weight: 500;">Enjoy total freedom,total flexibility,and make more money driving with 
+    UBER.</p> <br>
+    <br> 
+    <div class="Uber">
+ 
+    <form id="booking-form">
+      <label for="pickup-location">Pickup Location:</label>
+      <input type="text" id="pickup-location" placeholder="pickup" required>
+
+      <label for="dropoff-location">Dropoff Location:</label>
+      <input type="text" id="dropoff-location" placeholder="drop" required><br>
+      <br>
+      <br>
+    
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" required>
+<br>
+      <button class="submit" type="submit">Book Now</button>
+    </form>
+  </main>
+  <div style="padding-left: 30%;">
+  <div style="background: none; width: 60%; color:cadetblue;">
+   <h3>Make good money. </h3>
+   
+   <img src="http://clipart-library.com/images_k/money-falling-transparent-background/money-falling-transparent-background-22.jpg" alt="money" width="90px" align="left">
+   <h5>Got a car? Turn it into a money machine. The city is buzzing and Uber makes it easy for you to cash in on the action. <br><br>Plus you've already got everything you need to get started!</h5>
+
+ 
+    <h3>Drive when you want.</h3>
+  
+    <img src="https://tse1.explicit.bing.net/th?id=OIP.R1xDoAfuEprAaH8H-zPanQHaHY&pid=Api&P=0&h=180" alt="money" width="140px" align="left">
+    <h5>Need something outside the 9 to 5? As an independent contractor with Uber, you've got freedom and flexibilityto drive whenever you have time. Set your own schedule, so you can be there for all of life's most important moments.</h5>
+    
+    <h3>No office, No boss.</h3>
+  
+    <img src="https://media1.tenor.com/images/0d2267c406cd68483d46ca18b4f5ec19/tenor.gif?itemid=14854466" alt="money" width="120px" align="left">
+    <h5>Whether you're supporting your family or saving for something big.<br> Uber gives you the freedom to get behind the wheel when it makes sense for you.<br> Choose when you drive, where you go and whom you pick up.</h5>
+ 
+</div>
+</div>
+<footer class="footer">
+    <div class="footer__logo">
+      <img src="https://nipponrama.com/wp-content/uploads/2016/09/uber-logo.jpg?6bfec1&6bfec1" alt="Uber Logo">
+    </div>
+    
+    <div class="footer__contact">
+      <h4>Contact Us</h4>
+      <p>Email: support@uber.com</p>
+      <p>Phone: +1-800-UBER-123</p>
+      <p>Address: 123 Uber Street, NYC</p>
+    </div>
+    
+    <div class="footer__links">
+      <h4>Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    
+    <div class="footer__social">
+      <h4>Follow Us</h4>
+      <ul>
+        <li><a href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+        <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+        <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+        <li><a href="#"><i class='bx bxl-linkedin-square' ></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
